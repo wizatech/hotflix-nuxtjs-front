@@ -12,8 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
   /*
   ** Customize the progress-bar color
@@ -23,6 +23,9 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/main.css',
+    '@/assets/css/ionicons.min.css'
+
   ],
   /*
   ** Plugins to load before mounting the App
@@ -52,6 +55,9 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: 'http://localhost:3333/',
+    credentials: false,
+    proxyHeaders: false
   },
   /*
   ** Build configuration
