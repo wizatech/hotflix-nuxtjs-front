@@ -25,12 +25,12 @@ export default {
   css: [
     '@/assets/css/main.css',
     '@/assets/css/ionicons.min.css'
-
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -57,7 +57,7 @@ export default {
   axios: {
     baseURL: 'http://localhost:3333/',
     credentials: false,
-    proxyHeaders: false
+    proxyHeaders: false,
   },
   /*
   ** Build configuration
